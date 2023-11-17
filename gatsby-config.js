@@ -9,8 +9,8 @@ require("dotenv").config({
 
 module.exports = {
 	siteMetadata: {
-		title: `Taste of Dubai Festival`,
-		description: `The ultimate celebration of food, drink and entertainment made a tasty return to Dubai from Mar 1-3 2024`,
+		title: `Taste of Abu Dhabi Festival`,
+		description: `Abu Dhabi’s Ultimate Celebration of Food, Drink and Music returns!  10-12 November 2023, Gateway Park South`,
 		author: `Dewynters`,
 		siteUrl: process.env.GATSBY_FRONTEND_URL
 	},
@@ -66,12 +66,12 @@ module.exports = {
 						},
 					},
 				},
-				auth: {
-				htaccess: {
-				username: process.env.CMS_HTTP_USERNAME,
-				password: process.env.CMS_HTTP_PASSWORD,
-				},
-				},
+				// auth: {
+				// 	htaccess: {
+				// 		username: process.env.CMS_HTTP_USERNAME,
+				// 			password: process.env.CMS_HTTP_PASSWORD,
+				// 	},
+				// },
 			},
 		},
 		`gatsby-plugin-sitemap`,
