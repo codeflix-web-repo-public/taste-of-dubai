@@ -66,12 +66,12 @@ module.exports = {
 						},
 					},
 				},
-				// auth: {
-				// 	htaccess: {
-				// 		username: process.env.CMS_HTTP_USERNAME,
-				// 			password: process.env.CMS_HTTP_PASSWORD,
-				// 	},
-				// },
+				auth: {
+				htaccess: {
+				username: process.env.CMS_HTTP_USERNAME,
+				password: process.env.CMS_HTTP_PASSWORD,
+				},
+				},
 			},
 		},
 		`gatsby-plugin-sitemap`,
