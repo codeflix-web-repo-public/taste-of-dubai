@@ -9,8 +9,8 @@ require("dotenv").config({
 
 module.exports = {
 	siteMetadata: {
-		title: `Taste of Abu Dhabi Festival`,
-		description: `Abu Dhabi’s Ultimate Celebration of Food, Drink and Music returns!  10-12 November 2023, Gateway Park South`,
+		title: `Taste of Dubai Festival`,
+		description: `Dubai’s Ultimate Celebration of Food, Drink and Music returns! March 1 - 3 2024`,
 		author: `Dewynters`,
 		siteUrl: process.env.GATSBY_FRONTEND_URL
 	},

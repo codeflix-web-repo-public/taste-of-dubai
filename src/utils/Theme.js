@@ -20,7 +20,7 @@ const font = {
         base: "AvertaRegular",
         body: `AvertaRegular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
         bold: `AvertaBold`,
-        black: `AvertaBlack`
+        black: `AvertaBlack` 
     },
     weight: {
         regular: 400,
@@ -46,16 +46,16 @@ const font = {
         size: `${fontSizeBase * 3.5}rem`
     },
     h2: {
-        size: `${fontSizeBase * 3.2}rem`
+        size: `${fontSizeBase * 3.2}rem` 
     },
     h3: {
         size: `${fontSizeBase * 2.9}rem`
     },
     h4: {
-        size: `${fontSizeBase * 2.5}rem`,
+        size: `${fontSizeBase * 2.5}rem`, 
     },
     h5: {
-        size: `${fontSizeBase * 1.5}rem`,
+        size: `${fontSizeBase * 1.5}rem`, 
     },
     h6: {
         size: `${fontSizeBase * 1.15}rem`
@@ -69,9 +69,9 @@ const ThemeExport = {
     font,
     transitionBase: "all .4s ease-in-out",
     colors: {
-        themeTitle: "#19b48e",
-        primary: "#19b48e",
-        secondary: "#ffff3a",
+        themeTitle: "#953B8C",
+        primary: "#F4214F",
+        secondary: "#FFFF00",
         tertiary: "#953B8C",
         quaternary: "#B5DDD8",
         white: "#ffffff",
@@ -87,11 +87,11 @@ const ThemeExport = {
         red: "#BB133E",
         navy: "#012169",
         pink: "#F43581",
-        purple: "#953B8C",
+        purple: "#702283",
         yellow: "#F2C83D",
         turquoise: "#00ADB9",
         orange: "#f0820e",
-        gradient: `linear-gradient(to left, #19b48e, #19b48e);`
+        gradient: `linear-gradient(to left, #953B8C, #FF1442);`
     }
 }
 

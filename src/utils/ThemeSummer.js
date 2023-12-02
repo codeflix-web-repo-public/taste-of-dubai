@@ -69,9 +69,9 @@ const ThemeExport = {
     font,
     transitionBase: "all .4s ease-in-out",
     colors: {
-        themeTitle: "#19b48e",
-        primary: "#19b48e",
-        secondary: "#ffff3a",
+        themeTitle: "#F4214F",
+        primary: "#F4214F",
+        secondary: "#FFFF00",
         tertiary: "#953B8C",
         quaternary: "#B5DDD8",
         white: "#ffffff",
@@ -91,7 +91,7 @@ const ThemeExport = {
         yellow: "#F2C83D",
         turquoise: "#00ADB9",
         orange: "#f0820e",
-        gradient: `linear-gradient(311.18deg, #19b48e -0.75%, #19b48e 67.2%);`
+        gradient: `linear-gradient(311.18deg, #953B8C -0.75%, #FF1442 67.2%);`
     }
 }
 
