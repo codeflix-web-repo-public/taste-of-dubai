@@ -16,7 +16,7 @@ import {
 } from "utils/Validations"
 
 const ContainerMaxStyled = styled(ContainerMax)`
-    color: ${props => props.theme.colors.grey1};   
+    color: ${props => props.theme.colors.tertiary};   
     padding-top: 3rem;
     padding-bottom: 1.5rem;
 
