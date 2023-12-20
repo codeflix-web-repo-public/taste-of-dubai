@@ -16,6 +16,7 @@ import { LanguageContext } from "utils/LanguageContext"
 import Header from "components/Header/Header"
 import Footer from "components/Footer/Footer"
 import SocialGlobal from "components/shared/SocialGlobal"
+import CookieConsent from "components/shared/CookieBanner"
 
 const SiteWrap = styled.div`
     /* padding-top: 146px; */
