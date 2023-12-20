@@ -21,20 +21,7 @@ module.exports = {
 		`gatsby-plugin-styled-components`,
 		`gatsby-plugin-catch-links`,
 		`gatsby-plugin-gdpr-cookies`,
-		`gatsby-plugin-google-gtag`,
 		`gatsby-cookie-notice`,
-{
-	resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [`G-WFH7PYNGJ6`],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true
-        },
-      },
-},
 		{
 			resolve: `gatsby-plugin-sass`,
 			sassOptions: {
