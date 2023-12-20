@@ -24,7 +24,7 @@ module.exports = {
 		`gatsby-plugin-google-gtag`,
 		`gatsby-cookie-notice`,
 {
-	resolve: `gatsby-plugin-google-analytics`,
+	resolve: `gatsby-plugin-google-gtag`,
 	options: {
 	  trackingId: "G-WFH7PYNGJ6",
 	  head: true,
