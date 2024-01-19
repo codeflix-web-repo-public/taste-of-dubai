@@ -164,6 +164,12 @@ module.exports = {
 			},
 		},
 {
+			resolve: `gatsby-plugin-facebook-pixel`,
+			options: {
+			  pixelId: "1089062052139385",
+			},
+		  },
+{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
 				host: process.env.GATSBY_FRONTEND_URL,
