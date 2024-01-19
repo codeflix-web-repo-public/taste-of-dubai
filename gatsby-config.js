@@ -170,6 +170,12 @@ module.exports = {
 			},
 		  },
 {
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: "AW-11372472148",
+			},
+		  },
+{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
 				host: process.env.GATSBY_FRONTEND_URL,

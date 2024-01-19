@@ -19,6 +19,7 @@
         "gatsby-plugin-canonical-urls": "^4.0.0",
         "gatsby-plugin-catch-links": "^4.0.0",
         "gatsby-plugin-facebook-pixel": "^1.0.8",
+        "gatsby-plugin-google-gtag": "^5.13.0",
         "gatsby-plugin-google-tagmanager": "^4.19.0",
         "gatsby-plugin-image": "^2.0.0",
         "gatsby-plugin-manifest": "^4.18.1",
