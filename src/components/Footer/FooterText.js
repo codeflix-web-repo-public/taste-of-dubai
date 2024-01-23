@@ -21,7 +21,7 @@ const ContainerMaxStyled = styled(ContainerMax)`
     }
 
     img {
-        max-width: 65%;
+        max-width: 53.5%;
     }
 `
 
