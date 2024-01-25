@@ -32,7 +32,7 @@ const FooterText = (props) => {
             {props.text && 
                 <Text center white sm as="div" dangerouslySetInnerHTML={{ __html: LinkSearchReplace(props.text) }} />
             }
-            <img src={menalogo} alt={props.title} className="pt-4 pb-4" width="150" height="115" />
+            <a href="https://mena-events.com" target="_blank"><img src={menalogo} alt={props.title} className="pt-4 pb-4" width="150" height="115"></img></a>
         </ContainerMaxStyled>
     )
 }
