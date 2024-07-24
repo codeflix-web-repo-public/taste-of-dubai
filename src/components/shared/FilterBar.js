@@ -17,7 +17,6 @@ const FilterBar = styled.div`
     .filter-title {
         font-family: ${props => props.theme.font.family.bold};
         font-size: ${props => props.theme.font.size.base};
-        color: white;
         padding-right: 1rem;
         display: none;
         text-transform: uppercase;
