@@ -18,7 +18,6 @@ const FilterBar = styled.div`
         font-family: ${props => props.theme.font.family.bold};
         font-size: ${props => props.theme.font.size.base};
         padding-right: 1rem;
-        display: none;
         text-transform: uppercase;
 
         @media ${media.lg} {
