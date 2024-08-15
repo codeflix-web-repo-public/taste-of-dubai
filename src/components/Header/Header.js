@@ -5,6 +5,7 @@ import { LanguageContext } from "utils/LanguageContext"
 import HeaderAnnouncement from "./HeaderAnnouncement"
 import NavBar from "./NavBar"
 import NavFull from "./NavFull"
+import CookieConsent from "../CookieConsent"
 
 const HeaderWrap = styled.header`
     position: fixed;
@@ -118,6 +119,7 @@ class Header extends Component {
                         navTop={this.state.navTop} 
                     />
                 </HeaderWrap>
+                <CookieConsent />
                 {/* <HeaderCookieConsent /> */}
             </>
         )
