@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+import React from "react";
 
-// You can delete this file if you're not using it
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <meta
+      key="google-site-verification"
+      name="google-site-verification"
+      content="tOZYmDy-w62VaqjJ9qcZob6ZPuaI_bl9qX5LEizdEQE"
+    />,
+  ]);
+};
