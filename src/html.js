@@ -15,7 +15,6 @@ export default function HTML(props) {
  (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'left', leadColor : '#146ff8', triggerColor : '#f43581', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'small', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 20, triggerRadius : '50%' } }); }; h.appendChild(s); })();
         `}} /> */}
         {props.headComponents}
-        <meta name="google-site-verification" content="tOZYmDy-w62VaqjJ9qcZob6ZPuaI_bl9qX5LEizdEQE" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
