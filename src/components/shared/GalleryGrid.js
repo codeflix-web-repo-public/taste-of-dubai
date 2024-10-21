@@ -23,7 +23,7 @@ class GalleryGrid extends Component {
             filter: 'reload',
             postCount: 0,
             postsHtml: "",
-            filterActive: false,
+            filterActive: true,
             activeImage: 0,
             images: this.props.images,
             lightboxImages: [],

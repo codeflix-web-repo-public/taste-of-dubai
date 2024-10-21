@@ -1,0 +1,8 @@
+// Define custom gutters for different breakpoints
+$gutters: (
+  xs: 10px,   // Extra small devices
+  sm: 15px,   // Small devices
+  md: 20px,   // Medium devices
+  lg: 25px,   // Large devices
+  xl: 30px    // Extra large devices
+);

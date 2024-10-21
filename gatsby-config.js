@@ -10,7 +10,7 @@ require("dotenv").config({
 module.exports = {
 	siteMetadata: {
 		title: `Taste of Dubai Festival`,
-		description: `Dubai’s Ultimate Celebration of Food, Drink and Music returns! March 1 - 3 2024`,
+		description: `Dubai’s Ultimate Celebration of Food, Drink and Music returns! 23-25 February 2024`,
 		author: `Dewynters`,
 		siteUrl: process.env.GATSBY_FRONTEND_URL
 	},
@@ -165,6 +165,19 @@ module.exports = {
 				defaultDataLayer: { platform: "gatsby" },
 			},
 		},
+{
+			resolve: `gatsby-plugin-facebook-pixel`,
+			options: {
+			  pixelId: "1089062052139385",
+			},
+		  },
+{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: [ "AW-11372472148","G-WFH7PYNGJ6",
+			],
+			},
+		  },
 {
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
