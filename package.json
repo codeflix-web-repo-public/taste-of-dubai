@@ -9,6 +9,10 @@
         "@fortawesome/free-brands-svg-icons": "^6.6.0",
         "@fortawesome/free-solid-svg-icons": "^6.6.0",
         "@fortawesome/react-fontawesome": "^0.2.2",
+        "@img/sharp-libvips-win32-x64": "^1.2.4",
+        "@img/sharp-win32-x64": "^0.34.5",
+        "@lmdb/lmdb-win32-x64": "^2.5.3",
+        "@parcel/watcher-win32-x64": "^2.4.1",
         "axios": "^1.7.7",
         "babel-plugin-styled-components": "^2.1.4",
         "babel-preset-gatsby": "^3.13.2",
@@ -16,9 +20,11 @@
         "bricks.js": "^1.8.0",
         "gatsby": "^5.13.7",
         "gatsby-background-image": "^1.6.0",
+        "gatsby-cookie-notice": "^1.0.6",
         "gatsby-plugin-canonical-urls": "^5.13.1",
         "gatsby-plugin-catch-links": "^5.13.1",
         "gatsby-plugin-facebook-pixel": "^1.0.8",
+        "gatsby-plugin-gdpr-cookies": "^2.0.10",
         "gatsby-plugin-google-gtag": "^5.13.1",
         "gatsby-plugin-google-tagmanager": "^5.13.1",
         "gatsby-plugin-image": "^3.13.1",
@@ -56,13 +62,23 @@
         "reactstrap": "^9.2.3",
         "sass": "^1.79.4",
         "scroll-to-element": "^2.0.3",
+        "sharp": "^0.34.5",
         "slick-carousel": "^1.8.1",
         "styled-components": "^6.1.13",
         "yet-another-react-lightbox": "^3.21.6"
     },
     "devDependencies": {
+        "cross-env": "^10.1.0",
         "gatsby-plugin-netlify": "^5.1.1",
         "prettier": "3.3.3"
+    },
+    "optionalDependencies": {
+        "@parcel/watcher-linux-x64-glibc": "2.5.1"
+    },
+    "overrides": {
+        "terser-webpack-plugin": "false",
+        "@parcel/watcher": "2.5.1",
+        "@parcel/watcher-linux-x64-glibc": "2.5.1"
     },
     "keywords": [
         "gatsby"
@@ -70,7 +86,7 @@
     "license": "0BSD",
     "scripts": {
         "build": "gatsby build",
-        "develop": "GATSBY_CONCURRENT_DOWNLOAD=5 gatsby develop",
+        "develop": "cross-env GATSBY_CONCURRENT_DOWNLOAD=5 gatsby develop",
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
         "start": "npm run develop",
         "serve": "gatsby serve",
