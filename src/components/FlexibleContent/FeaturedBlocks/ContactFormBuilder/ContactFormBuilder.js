@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import ReactDOM from 'react-dom'
 import scrollToElement from "scroll-to-element"
+import axios from 'axios'
 import { Container } from "reactstrap"
 import Text from "components/shared/Text"
 import Button from "components/shared/Button"
@@ -16,6 +17,11 @@ import DropdownField from "./DropdownField"
 import CheckboxField from "./CheckboxField"
 import RadioField from "./RadioField"
 import FileUploadField from "./FileUploadField"
+
+const API = {
+    get: (name, path, init) => axios.get(`${process.env.GATSBY_BACKEND_URL}${path}`, { params: init.queryStringParameters }),
+    post: (name, path, init) => axios.post(`${process.env.GATSBY_BACKEND_URL}${path}`, init.body),
+}
 
 
 const Loading = styled.span`

@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 import {Label, FormGroup, Input, FormFeedback} from "reactstrap"
 import scrollToElement from "scroll-to-element"
 import styled from "styled-components"
+import axios from 'axios'
 import Button from "components/shared/Button"
 import Text from "components/shared/Text"
 import FormStyled from "components/shared/FormStyled"
@@ -13,6 +14,11 @@ import {
 } from 'utils/Validations'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons"
+
+const API = {
+    get: (name, path, init) => axios.get(`${process.env.GATSBY_BACKEND_URL}${path}`, { params: init.queryStringParameters }),
+    post: (name, path, init) => axios.post(`${process.env.GATSBY_BACKEND_URL}${path}`, init.body),
+}
 
 
 const FormFeedbackStyled = styled(FormFeedback)`
