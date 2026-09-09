@@ -55,11 +55,11 @@ module.exports = {
 				// 		writeQueriesToDisk: true,
 				// 	},
 				// },
-				// schema: {
-				// 	perPage: process.env.PER_PAGE,
-				// 	requestConcurrency: 10,
-				// 	timeout: 90000,
-				// },
+				schema: {
+					perPage: 20,
+					requestConcurrency: 5,
+					timeout: 90000,
+				},
 				type: {
 					MediaItem: {
 						localFile: {
