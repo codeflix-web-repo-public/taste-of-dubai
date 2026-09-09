@@ -12,16 +12,24 @@ define('GH_DISPATCH_OWNER', 'codeflix-web-repo-public');
 define('GH_DISPATCH_REPO', 'taste-of-dubai');
 define('GH_DISPATCH_EVENT_TYPE', 'wp-publish');
 
-add_action('save_post', 'gh_dispatch_on_save_post', 10, 2);
+add_action('transition_post_status', 'gh_dispatch_on_status_transition', 10, 3);
 
-function gh_dispatch_on_save_post($post_id, $post) {
-    if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
+function gh_dispatch_on_status_transition($new_status, $old_status, $post) {
+    if ($new_status !== 'publish') {
         return;
     }
 
-    if ($post->post_status !== 'publish') {
+    if (wp_is_post_autosave($post->ID) || wp_is_post_revision($post->ID)) {
         return;
     }
+
+    // WordPress/Yoast/ACF can re-save the same post multiple times per user
+    // action; debounce so one publish only triggers one rebuild.
+    $lock_key = 'gh_dispatch_lock_' . $post->ID;
+    if (get_transient($lock_key)) {
+        return;
+    }
+    set_transient($lock_key, true, 30);
 
     gh_dispatch_trigger_rebuild();
 }
