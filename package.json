@@ -9,10 +9,6 @@
         "@fortawesome/free-brands-svg-icons": "^6.6.0",
         "@fortawesome/free-solid-svg-icons": "^6.6.0",
         "@fortawesome/react-fontawesome": "^0.2.2",
-        "@img/sharp-libvips-win32-x64": "^1.2.4",
-        "@img/sharp-win32-x64": "^0.34.5",
-        "@lmdb/lmdb-win32-x64": "^2.5.3",
-        "@parcel/watcher-win32-x64": "^2.4.1",
         "axios": "^1.7.7",
         "babel-plugin-styled-components": "^2.1.4",
         "babel-preset-gatsby": "^3.13.2",
@@ -73,6 +69,10 @@
         "prettier": "3.3.3"
     },
     "optionalDependencies": {
+        "@img/sharp-libvips-win32-x64": "^1.2.4",
+        "@img/sharp-win32-x64": "^0.34.5",
+        "@lmdb/lmdb-win32-x64": "^2.5.3",
+        "@parcel/watcher-win32-x64": "^2.4.1",
         "@parcel/watcher-linux-x64-glibc": "2.5.1"
     },
     "overrides": {
